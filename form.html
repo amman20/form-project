@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="w3-panel">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="widht=device-width,initial-scale=1.0">
+    <title>Form</title>
+    <!--<link rel="stylesheet" href="css/form-style.css">-->
+    <link rel="stylesheet" href="css/w3.css">
+</head>
+<div class="w3-sidebar w3-right w3-bar-block w3-white w3-animate-left" style="display:none;width: 20%;"
+     id="sidebar">
+    <span class="w3-right w3-button w3-large" id="close">&times;</span>
+    <a href="#" class="w3-bar-item w3-button">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+<h1 class="w3-center w3-animate-zoom w3-hover-text-red">Quick Support</h1>
+<div id="main">
+    <div class="w3-containter w3-pale-blue w3-card-4">
+        <nav class="w3-bar w3-blue w3-border">
+            <li class="w3-left w3-button w3-xlarge" id="bar">☰</li>
+            <div class="w3-dropdown-hover">
+                <li class="w3-button w3-blue w3-animate-left"><a class="w3-button" href="#">Home</a></li>
+                <div class="w3-dropdown-content w3-bar-block">
+                    <a href="#" class="w3-bar-item w3-button">amman</a>
+                    <a href="#" class="w3-bar-item w3-button">shandle</a>
+                    <a href="#" class="w3-bar-item w3-button">momo</a>
+                </div>
+            </div>
+            <li class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><a class="w3-button" href="#">Link 1</a></li>
+            <li class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><a class="w3-button" href="#">Link 2</a></li>
+            <div class="w3-right">
+                <li class="w3-bar-item w3-animate-right"><input type="text" class="w3-input" placeholder="Search..">
+                </li>
+                <li class="w3-bar-item w3-animate-right">
+                    <button class="w3-btn w3-green">Go</button>
+                </li>
+            </div>
+        </nav>
+    </div>
+</div>
+<body>
+<p>If you have any questions feel free to ask here.
+    Just fill the form below.</p>
+<form class="form">
+    <p><label class="w3-label w3-validate" required>Name</label>
+        <input class="field w3-input" type="text" placeholder="Name"></p>
+    <p><label>Email</label>
+        <input class="field w3-input" type="email" placeholder="Email"></p>
+    <p><label class="w3-label">Tour Name</label>
+        <input class="field w3-input" type="text" placeholder="Tour Name"></p>
+    <div class="panel w3-card-4 w3-green">
+        <h3>Check You Gender<span class="w3-tag w3-spin w3-red ">Gender</span></h3>
+        <div>
+            <input class="w3-radio" type="radio" id="Male" value="Male" name="gender">Male<br>
+            <input class="w3-radio" type="radio" value="Feale" name="gender">Female<br>
+            <input class="w3-radio" type="radio" value="Hybride" name="gender" checked>Hybride<br>
+        </div>
+        <select class="w3-select w3-margin-top">
+            <option disabled>Choose Option</option>
+            <option id="ml">Male</option>
+            <option selected>Female</option>
+            <option>Hypride</option>
+        </select>
+        <p id="hideme">This will be hidden if You are male.</p>
+        <!--<input type="reset">-->
+        <input class="w3-btn w3-margin w3-pale-green" type="submit" id="submit">
+    </div>
+    <div id="ErrorMessage"></div>
+</form>
+<div class="w3-card-4 w3-grey w3-panel">
+    <input class="w3-input w3-margin-top w3-animate-input timer" id="num" placeholder="Enter A Number" type="text"
+           width="100%">
+    <input class="w3-btn w3-dark-grey timer w3-margin-top" style="transform: rotate(-5deg)" type="submit" id="sub">
+    <h1 class="w3-center w3-jumbo" id="timeField">0:00</h1>
+</div>
+<div class="w3-card-4">
+    <div class="w3-clear">
+        <img class="w3-image w3-half w3-animate-left w3-border w3-hover-opacity" src="images/mohammed.jpg"
+             alt="Mohammed Picture">
+        <img class="w3-image w3-half w3-border w3-animate-right w3-hover-opacity " src="images/hi.jpg"
+             alt="my Picture">
+    </div>
+    <div class="w3-container w3-center w3-blue w3-padding-16">This is the picture of my elder brother
+        Mohammed Mobarak. I respect him so much.
+    </div>
+</div>
+<div id="accordion" class="w3-panel w3-card-4 w3-padding-16">
+    <h1><a href="#" class="w3-button">Front-end Developer & Educator</a></h1>
+    <div>
+        <p> Provides various front-end related services ranging from development work, consultations, speaking
+            engagements, corporate training, workshops and online courses.
+            See more at christinatruong.com.
+        </p>
+    </div>
+    <h1><a href="#" class="w3-button">Amman</a></h1>
+    <div>
+        <p> Provides various front-end related services ranging from development work, consultations, speaking
+            engagements, corporate training, workshops and online courses.
+            See more at christinatruong.com.
+        </p>
+    </div>
+    <h1><a href="#" class="w3-button">shandle</a></h1>
+    <div>
+        <p> Provides various front-end related services ranging from development work, consultations, speaking
+            engagements, corporate training, workshops and online courses.
+            See more at christinatruong.com.
+        </p>
+    </div>
+</div>
+<div class="w3-panel w3-red">
+    <div class="w3-responsive" id="para">this text will be changed.</div>
+    <button id="btn">click</button>
+</div>
+<div class="w3-clear">
+    <button class="w3-btn w3-green w3-margin-bottom w3-animate-left">Click here</button>
+</div>
+<input type="text" placeholder="Enter Your Nickname" class="w3-input w3-margin">
+
+<script src="script/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="script/jquery-ui.js"></script>
+<script type="text/javascript" src="script/form-script.js"></script>
+</body>
+</html>

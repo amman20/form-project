@@ -1,0 +1,151 @@
+/*global style
+-------------*/
+html {
+    background: lightblue;
+    box-sizing: border-box;
+}
+
+*::selection {
+    color: #EF233C;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.wrapper {
+    background: sandybrown;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 100px;
+    border: 1px solid red;
+    position: relative;
+}
+
+.form {
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+#move {
+    color: white;
+    font-size: large;
+    /*width: 10%;*/
+    /*height: auto;*/
+    background-color: blue;
+    overflow: hidden;
+}
+
+#submit {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 2em;
+    border: 2px solid blue;
+}
+
+.left {
+    display: inline;
+    margin-right: 3rem;
+}
+
+.field {
+    /*margin-top: 16px;*/
+    /*width: 60%;*/
+    /*float: left;*/
+    /*max-height: 200px;*/
+    /*border: 2px solid white;*/
+    /*margin-left: 2em;*/
+}
+
+#ErrorMessage {
+    margin-top: 50px;
+    color: red;
+}
+
+#radioField {
+    margin-top: 40px;
+    clear: both;
+}
+
+/*.codeBlock{*/
+/*border: 2px dotted white;*/
+/*background: black;*/
+/*color: white;*/
+/*font-family: Arial;*/
+/*}*/
+#timer {
+    background: hotpink;
+    border: 2px solid white;
+}
+
+#timeField {
+    margin-left: 30%;
+}
+
+#accordion h1 a {
+    text-decoration: none;
+    border: 1px dotted pink;
+    background: white;
+}
+
+/*navagation style
+--------------------*/
+nav {
+    background: lightblue;
+    border: 2px solid whitesmoke;
+    width: 100%;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navLink {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+.navLink:hover {
+    background: darkgray;
+}
+
+/*clicked class style
+----------------*/
+.clicked {
+    font-weight: bolder;
+    background-color: greenyellow;
+}
+
+/*droplist style
+-----------------------*/
+.dropList li {
+    display: block;
+    padding: 20px 0;
+    width: 200px;
+    text-align: center;
+}
+
+.dropList li:hover {
+    background: lightgreen;
+}
+
+.dropList {
+    display: none;
+    position: absolute;
+    background: whitesmoke;
+    padding: 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    /*display: none;*/
+}
+
+.dropdown:hover .dropList {
+    display: block;
+}
