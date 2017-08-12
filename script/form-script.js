@@ -144,7 +144,7 @@ function clicked() {
 
 function MyAjax() {
     $('#btn').click(function () {
-        $('#para').load('ajax.html');
+        $('#para').load('ajax.html #take');
     });
 }
 
